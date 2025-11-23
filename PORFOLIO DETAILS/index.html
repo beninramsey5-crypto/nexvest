@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXVEST - Elite Crypto & Forex Trading Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">
+                    <div class="logo-wrapper">
+                        <svg class="logo-icon" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="gradientArrow" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#00f0ff;stop-opacity:1" />
+                                    <stop offset="50%" style="stop-color:#0099ff;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#00d9ff;stop-opacity:1" />
+                                </linearGradient>
+                                <linearGradient id="gradientStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#00f0ff;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#0099ff;stop-opacity:1" />
+                                </linearGradient>
+                                <linearGradient id="gradientCore" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#00f0ff;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#0099ff;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <g class="outer-ring">
+                                <circle cx="60" cy="60" r="55" stroke="url(#gradientStroke)" stroke-width="3" fill="none" opacity="0.95"/>
+                            </g>
+                            <g class="inner-ring">
+                                <circle cx="60" cy="60" r="45" stroke="url(#gradientStroke)" stroke-width="2" fill="none" opacity="0.7"/>
+                            </g>
+                            <g>
+                                <rect x="80" y="70" width="9" height="15" fill="url(#gradientArrow)" rx="2" opacity="1"/>
+                                <rect x="92" y="60" width="9" height="25" fill="url(#gradientArrow)" rx="2" opacity="1"/>
+                                <rect x="104" y="50" width="9" height="35" fill="url(#gradientArrow)" rx="2" opacity="1"/>
+                            </g>
+                            <g>
+                                <path d="M 25 85 L 35 35 L 45 85" stroke="url(#gradientArrow)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+                                <path d="M 55 45 L 75 60 L 55 75" stroke="url(#gradientArrow)" stroke-width="4.5" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+                            </g>
+                            <circle class="core-circle" cx="60" cy="60" r="8" fill="url(#gradientCore)"/>
+                        </svg>
+                    </div>
+                    <div class="logo-text-container">
+                        <div class="logo-text">NEXVEST</div>
+                        <div class="tagline">ELITE TRADING</div>
+                    </div>
+                </a>
+
+                <ul class="nav-menu">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#market">Market</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#analysis">Analysis</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact" class="contact-btn">Support</a></li>
+                </ul>
+
+                <div class="hamburger" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="menu-overlay" onclick="toggleMenu()"></div>
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#market">Market</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#analysis">Analysis</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-slider" id="home">
+        <div class="slide active" style="background-image: url('2nd.img.jpeg');">
+            <div class="slide-content">
+                <div class="container">
+                    <div class="slide-text">
+                        <h1>Best One in Town<br>& Crypto <span class="highlight">Services</span></h1>
+                        <div class="divider"></div>
+                        <p>Trade crypto & forex with confidence. Real-time market data, advanced analytics, and 24/7 professional support.</p>
+                        <div class="slide-buttons">
+                            <a href="#portfolio" class="btn-primary">Start Trading</a>
+                            <a href="#contact" class="btn-secondary">Get Started</a>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+        <div class="slide" style="background-image: url('first.img.jpeg');">
+            <div class="slide-content">
+                <div class="container">
+                    <div class="slide-text">
+                        <h1>Financial <span class="highlight">Planning</span><br>& Investment</h1>
+                        <div class="divider"></div>
+                        <p>Expert strategies to maximize your returns. Comprehensive financial planning for crypto and forex markets.</p>
+                        <div class="slide-buttons">
+                            <a href="#analysis" class="btn-primary">View Analysis</a>
+                            <a href="#contact" class="btn-secondary">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide" style="background-image: url('4th.image.jpeg');">
+            <div class="slide-content">
+                <div class="container">
+                    <div class="slide-text">
+                        <h1>Crypto Trading<br>& <span class="highlight">Management</span></h1>
+                        <div class="divider"></div>
+                        <p>Professional portfolio management with real-time monitoring. Secure, fast, and intuitive trading platform.</p>
+                        <div class="slide-buttons">
+                            <a href="#market" class="btn-primary">Explore Market</a>
+                            <a href="#contact" class="btn-secondary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-nav">
+            <div class="slider-arrow prev" onclick="changeSlide(-1)"></div>
+            <div class="slider-arrow next" onclick="changeSlide(1)"></div>
+        </div>
+    </section>
+
+    <!-- Market Section -->
+    <section class="market-section" id="market">
+        <div class="container">
+            <div class="section-title">
+                <h2>Live Market Ticker</h2>
+                <p>Real-time cryptocurrency prices & market data</p>
+            </div>
+            <div class="market-ticker">
+                <div class="ticker-grid">
+                    <div class="ticker-item">
+                        <div class="ticker-header">
+                            <div>
+                                <div class="coin-name">Bitcoin</div>
+                                <div class="coin-symbol">BTC</div>
+                            </div>
+                        </div>
+                        <div class="price">$45,320.50</div>
+                        <div class="price-change up">↑ +5.2%</div>
+                    </div>
+                    <div class="ticker-item">
+                        <div class="ticker-header">
+                            <div>
+                                <div class="coin-name">Ethereum</div>
+                                <div class="coin-symbol">ETH</div>
+                            </div>
+                        </div>
+                        <div class="price">$2,847.30</div>
+                        <div class="price-change up">↑ +3.8%</div>
+                    </div>
+                    <div class="ticker-item">
+                        <div class="ticker-header">
+                            <div>
+                                <div class="coin-name">Binance Coin</div>
+                                <div class="coin-symbol">BNB</div>
+                            </div>
+                        </div>
+                        <div class="price">$612.40</div>
+                        <div class="price-change down">↓ -1.2%</div>
+                    </div>
+                    <div class="ticker-item">
+                        <div class="ticker-header">
+                            <div>
+                                <div class="coin-name">XRP</div>
+                                <div class="coin-symbol">XRP</div>
+                            </div>
+                        </div>
+                        <div class="price">$2.45</div>
+                        <div class="price-change up">↑ +2.1%</div>
+                    </div>
+                    <div class="ticker-item">
+                        <div class="ticker-header">
+                            <div>
+                                <div class="coin-name">USDT</div>
+                                <div class="coin-symbol">$</div>
+                            </div>
+                        </div>
+                        <div class="price">$0.98</div>
+                        <div class="price-change down">↓ -0.5%</div>
+                    </div>
+                    <div class="ticker-item">
+                        <div class="ticker-header">
+                            <div>
+                                <div class="coin-name">Solana</div>
+                                <div class="coin-symbol">SOL</div>
+                            </div>
+                        </div>
+                        <div class="price">$178.20</div>
+                        <div class="price-change up">↑ +4.3%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio-section" id="portfolio">
+        <div class="container">
+            <div class="section-title">
+                <h2>Portfolio Analytics</h2>
+                <p>Track and manage your digital assets with precision</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-card">
+                    <h3><i class="fas fa-wallet"></i> Total Portfolio Value</h3>
+                    <div class="portfolio-stat">
+                        <span class="stat-label">Current Value</span>
+                        <span class="stat-value">$125,450.80</span>
+                    </div>
+                    <div class="portfolio-stat">
+                        <span class="stat-label">24h Change</span>
+                        <span class="stat-value">+$3,250.45</span>
+                    </div>
+                    <div class="portfolio-stat">
+                        <span class="stat-label">Monthly Return</span>
+                        <span class="stat-value">+12.5%</span>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <h3><i class="fas fa-chart-pie"></i> Asset Distribution</h3>
+                    <div class="portfolio-stat">
+                        <span class="stat-label">Bitcoin Holdings</span>
+                        <span class="stat-value">45%</span>
+                    </div>
+                    <div class="portfolio-stat">
+                        <span class="stat-label">Ethereum Holdings</span>
+                        <span class="stat-value">30%</span>
+                    </div>
+                    <div class="portfolio-stat">
+                        <span class="stat-label">Altcoins</span>
+                        <span class="stat-value">25%</span>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <h3><i class="fas fa-trending-up"></i> Performance Metrics</h3>
+                    <div class="portfolio-stat">
+                        <span class="stat-label">All-Time Gain</span>
+                        <span class="stat-value">+87.3%</span>
+                    </div>
+                    <div class="portfolio-stat">
+                        <span class="stat-label">Win Rate</span>
+                        <span class="stat-value">78%</span>
+                    </div>
+                    <div class="portfolio-stat">
+                        <span class="stat-label">Risk Level</span>
+                        <span class="stat-value">Low</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Analysis Section -->
+    <section class="analysis-section" id="analysis">
+        <div class="container">
+            <div class="analysis-container">
+                <div class="analysis-image">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" alt="Market Analysis">
+                </div>
+                <div class="analysis-content">
+                    <h2>Advanced Data Analysis</h2>
+                    <p>Our cutting-edge analytics platform provides real-time market insights and predictive analysis to help you make informed trading decisions.</p>
+                    <ul class="analysis-features">
+                        <li>Real-time price charts & candlestick analysis</li>
+                        <li>Technical indicators & trend analysis</li>
+                        <li>AI-powered market predictions</li>
+                        <li>Portfolio risk assessment</li>
+                        <li>Automated trading signals</li>
+                        <li>24/7 market monitoring</li>
+                    </ul>
+                    <a href="#contact" class="btn-primary">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Premium Services</h2>
+                <p>Everything you need for professional crypto & forex trading</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-exchange-alt"></i></div>
+                    <h3>Instant Trading</h3>
+                    <p>Execute trades instantly with zero delays. Low fees and fast settlement times.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-lock"></i></div>
+                    <h3>Secure Wallet</h3>
+                    <p>Military-grade encryption for maximum security. Multi-signature protection available.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Portfolio Management</h3>
+                    <p>Professional management tools for tracking and optimizing your investments.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-headset"></i></div>
+                    <h3>24/7 Support</h3>
+                    <p>Expert support team available round the clock to assist you.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Mobile App</h3>
+                    <p>Trade on the go with our fast, secure mobile application.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>Trading Academy</h3>
+                    <p>Learn trading strategies from expert instructors. Free courses available.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-container">
+                <div class="about-image">
+                    <img style="background-image: url('5th.image.jpeg') alt=About NEXVEST;">
+                </div>
+                <div class="about-content">
+                    <h2>About NEXVEST</h2>
+                    <p>Founded in 2025 by Ramsey kingsley Benin graduate Student from the tertiary institution of the university of calabar, calabar, NEXVEST has established itself as one of the most trusted cryptocurrency and forex trading platforms globally. We serve over 500,000 active traders.</p>
+                    <p>Our mission is to democratize access to professional-grade trading tools and make crypto investing accessible to everyone, from beginners to institutional traders.</p>
+                    <ul class="analysis-features">
+                        <li>500,000+ Active Traders Worldwide</li>
+                        <li>$10 Billion+ Trading Volume</li>
+                        <li>99.99% Platform Uptime</li>
+                        <li>Fully Licensed & Regulated</li>
+                        <li>Award-Winning Platform</li>
+                        <li>Industry-Leading Security</li>
+                    </ul>
+                    <a href="#contact" class="btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Trusted by Traders Worldwide</h2>
+                <p>Read real success stories from our satisfied clients</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" alt="Client" class="testimonial-image">
+                    <div class="stars">★★★★★</div>
+                    <p>"NEXVEST transformed my trading journey. The platform is intuitive and the support team is incredibly responsive. I've increased my portfolio by 150% in one year!"</p>
+                    <div class="testimonial-name">Alex Johnson</div>
+                    <div class="testimonial-role">Professional Trader</div>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop" alt="Client" class="testimonial-image">
+                    <div class="stars">★★★★★</div>
+                    <p>"As a beginner, I was intimidated by crypto trading. NEXVEST's academy and tools made it simple. Now I'm confidently managing my portfolio daily."</p>
+                    <div class="testimonial-name">Sarah Williams</div>
+                    <div class="testimonial-role">New Investor</div>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop" alt="Client" class="testimonial-image">
+                    <div class="stars">★★★★★</div>
+                    <p>"The security and reliability are unmatched. Trading with peace of mind knowing my assets are safe. Highly recommended for serious traders."</p>
+                    <div class="testimonial-name">Michael Chen</div>
+                    <div class="testimonial-role">Crypto Entrepreneur</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+                <p>Have questions? Our support team is here to help 24/7</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-form">
+                    <h3 style="margin-bottom: 30px; color: #00f0ff;">Send us a Message</h3>
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="your@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Subject</label>
+                        <input type="text" placeholder="How can we help?">
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea placeholder="Your message here..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button>Send Message</button>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-phone"></i></div>
+                        <div class="info-content">
+                            <h4>Phone</h4>
+                            <p>+234 913 373 4708</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="info-content">
+                            <h4>Email</h4>
+                            <p>support@nexvest.com<br>beninramsey5@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="info-content">
+                            <h4>Location</h4>
+                            <p>Rivers State, Port Harcourt<br>Nigeria</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-clock"></i></div>
+                        <div class="info-content">
+                            <h4>Business Hours</h4>
+                            <p>Monday - Sunday<br>24/7 Support Available</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About NEXVEST</h4>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Crypto Trading</a></li>
+                        <li><a href="#">Forex Trading</a></li>
+                        <li><a href="#">Portfolio Management</a></li>
+                        <li><a href="#">Trading Academy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Live Chat</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Compliance</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 NEXVEST. All Rights Reserved. | Elite Crypto & Forex Trading Platform</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile Menu Toggle
+        function toggleMenu() {
+            const hamburger = document.querySelector('.hamburger');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const overlay = document.querySelector('.menu-overlay');
+            
+            hamburger.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+            overlay.classList.toggle('active');
+            
+            if (mobileMenu.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        // Close menu when link clicked
+        document.querySelectorAll('.mobile-menu a').forEach(link => {
+            link.addEventListener('click', toggleMenu);
+        });
+
+        // Slider functionality - AUTO BACKGROUND IMAGE CHANGE with TEXT
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+
+        function showSlide(n) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            currentSlide = (n + totalSlides) % totalSlides;
+            slides[currentSlide].classList.add('active');
+        }
+
+        function changeSlide(direction) {
+            showSlide(currentSlide + direction);
+        }
+
+        // Auto-advance slider EVERY 6 SECONDS - Background images and text change automatically
+        setInterval(() => {
+            changeSlide(1);
+        }, 6000);
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    if (document.querySelector('.mobile-menu').classList.contains('active')) {
+                        toggleMenu();
+                    }
+                }
+            });
+        });
+
+        // Active nav highlight
+        window.addEventListener('scroll', () => {
+            let current = '';
+            const sections = document.querySelectorAll('section[id]');
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            document.querySelectorAll('.nav-menu a').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
